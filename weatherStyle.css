@@ -18,7 +18,7 @@ body::before{
     background-image: url(images/weather.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    backdrop-filter:blurr;
+    backdrop-filter:blur;
     filter: blur(5px);
     z-index: -1;
 }
@@ -49,6 +49,7 @@ body::before{
     background: linear-gradient(180deg,hsl(210, 100%, 70%),hsl(40, 100%, 75%));
     width: 50vmin;
     height: 70vmin;
+    border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(255, 255, 0, 0.571);
     display: flex;
     flex-wrap: wrap;
@@ -83,4 +84,9 @@ body::before{
 .emoji{
    margin-top: 2vmin;
    font-size: 4rem;
+}
+.errorDisplay{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
 }
